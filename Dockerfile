@@ -5,4 +5,4 @@ COPY helloworld.py /notebooks/
 
 WORKDIR "/notebooks"
 
-RUN ["python helloworld.py"]
+CMD ["python helloworld.py"]
