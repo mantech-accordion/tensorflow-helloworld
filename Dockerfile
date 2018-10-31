@@ -1,6 +1,8 @@
 FROM tensorflow/tensorflow
 MAINTAINER bskim "bskim@mantech.co.kr"
 
-COPY helloworld.py /notebooks/helloworld.py
+COPY helloworld.py /notebooks/
 
-RUN ["python /notebooks/helloworld.py"]
+WORKDIR "/notebooks"
+
+RUN ["python helloworld.py"]
